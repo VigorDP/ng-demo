@@ -1,0 +1,15 @@
+<a [routerLink]="['/animate']" routerLinkActive="router-link-active"
+  >动画demo</a
+>
+<a [routerLink]="['/default']" routerLinkActive="router-link-active"
+  >child default mode</a
+>
+<a [routerLink]="['/onpush']" routerLinkActive="router-link-active"
+  >child onpush mode</a
+>
+
+<div (click)="click()">parent current value: {{ count }}</div>
+<app-app-child [title]="title">test</app-app-child>
+<app-app-child-out-ngzone [title]="title">test</app-app-child-out-ngzone>
+
+<router-outlet></router-outlet>
